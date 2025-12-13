@@ -1,13 +1,5 @@
 import dynamic from 'next/dynamic';
 
-export const DynamicQueryDevtools = dynamic(
-  () => import('@tanstack/react-query-devtools').then(mod => mod.ReactQueryDevtools),
-  { 
-    ssr: false,
-    loading: () => null,
-  }
-);
-
 export const createDynamicComponent = (importFn, options = {}) => {
   return dynamic(importFn, {
     ssr: options.ssr ?? true,

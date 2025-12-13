@@ -1,0 +1,32 @@
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border: 2px solid #d0d0d0;
+  border-radius: 16px;
+  height: 54px;
+  padding: 0 18px;
+  box-shadow: none;
+  transition: border-color 0.2s ease;
+}
+
+.inputRow:focus-within {
+  border-color: #999999;
+}
+
+.input {
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 14px;
+  color: #2f2f2f;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #5b5b5b;
+}

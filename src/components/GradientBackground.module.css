@@ -1,0 +1,9 @@
+.leftGradient {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(ellipse 2000px 1200px at 10% 5%, rgba(255, 235, 140, 0.65) 0%, rgba(255, 240, 160, 0.45) 12%, rgba(255, 245, 200, 0.25) 25%, rgba(255, 250, 220, 0.1) 45%, transparent 70%),
+    radial-gradient(ellipse 1800px 1600px at 0% 100%, rgba(140, 185, 255, 0.7) 0%, rgba(160, 200, 255, 0.5) 10%, rgba(180, 215, 255, 0.35) 20%, rgba(210, 230, 255, 0.18) 35%, rgba(230, 240, 255, 0.08) 50%, transparent 70%),
+    linear-gradient(180deg, #fffef5 0%, #fffef8 25%, #fffefa 50%, #fefefd 75%, #ffffff 100%);
+}
