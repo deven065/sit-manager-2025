@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fffef5 0%, #fffef8 25%, #fef9e7 50%, #f0f9ff 100%);
+}
+
+.mainWrapper {
+  flex: 1;
+  margin-left: 64px;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s ease;
+}
+
+.mainContent {
+  flex: 1;
+  margin-top: 64px;
+  padding: 24px;
+}
+
+@media (max-width: 768px) {
+  .mainWrapper {
+    margin-left: 0;
+  }
+}

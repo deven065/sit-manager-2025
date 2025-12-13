@@ -1,9 +1,19 @@
-<<<<<<< HEAD
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-=======
-import { QueryProvider } from "@/lib/query/provider";
->>>>>>> 5a50afd797f90c1aa2140b3879bcaf3833f85831
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+  display: "swap",
+  preload: true,
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+  preload: false,
+});
 
 export const metadata = {
   title: "SIT Manager 2025",
@@ -12,17 +22,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-<<<<<<< HEAD
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
-=======
-    <html lang="en">
-      <body>
-        <QueryProvider>
-          {children}
-        </QueryProvider>
->>>>>>> 5a50afd797f90c1aa2140b3879bcaf3833f85831
       </body>
     </html>
   );
